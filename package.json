@@ -1,0 +1,17 @@
+{
+  "name": "erc777-website",
+  "version": "0.0.1",
+  "description": "ERC777 Official Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ERC777",
+    "ethereum",
+    "blockchain",
+    "token"
+  ],
+  "author": "0xjac",
+  "license": "MPL-2.0"
+}
