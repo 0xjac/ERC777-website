@@ -1,5 +1,6 @@
 # ERC777
 [![Website](https://img.shields.io/website/https/erc777.org?down_color=red&down_message=offline&style=flat-square&up_color=green&up_message=online)](https://erc777.org)
+![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/erc777.org?publish&style=flat-square)
 [![Content](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg?style=flat-square&maxAge=3600)][cc]
 [![License](https://img.shields.io/github/license/0xjac/ERC777.svg?style=flat-square&maxAge=3600)](https://github.com/0xjac/ERC777/blob/master/LICENSE)
 [![EIP](https://img.shields.io/badge/EIP-777-lightgrey.svg?style=flat-square&maxAge=3600)][erc777]

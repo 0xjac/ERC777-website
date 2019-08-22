@@ -1,0 +1,25 @@
+[context.production.environment]
+  HUGO_VERSION = "0.56.3"
+  HUGO_ENV = "production"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.56.3"
+
+[build]
+  publish = "/public"
+  command = "npm run build"
+
+[[redirects]]
+  from = "https://erc777-website.netlify.com/*"
+  to = "https://erc777.org/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "default-src 'none'; object-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; report-uri https://erc777website.report-uri.com/r/d/csp/enforce;"
