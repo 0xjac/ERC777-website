@@ -2,16 +2,31 @@
   "name": "erc777-website",
   "version": "0.0.1",
   "description": "ERC777 Official Website",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:0xjac/ERC777-website.git"
+  },
   "main": "index.js",
   "scripts": {
+    "build:site": "hugo --source site --destination ../public --verbose",
+    "build": "npm run clean && npm run build:site",
+    "clean": "rm -rf ./public",
+    "develop": "hugo server --source site --buildDrafts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "ERC777",
     "ethereum",
     "blockchain",
-    "token"
+    "token",
+    "official website",
+    "website"
   ],
   "author": "0xjac",
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
+    "bulma": "^0.7.5"
+  }
 }
