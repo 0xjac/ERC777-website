@@ -8,6 +8,7 @@ disableKinds = ["RSS", "sitemap", "taxonomy", "taxonomyTerm"]
 [params]
 sourceRepo = "https://github.com/0xjac/ERC777-website"
 contribLink = "https://github.com/0xjac/ERC777-website"
+MailThisToAlias = "erc777-website"
 
 [menu]
   [[ menu.main ]]
