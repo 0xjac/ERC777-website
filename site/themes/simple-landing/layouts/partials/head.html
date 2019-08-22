@@ -99,7 +99,11 @@
     {{ if (fileExists (print "/static" .Site.Data.defaults.icons.appleicon)) -}}
     <link rel="apple-touch-icon" href="{{ .Site.Data.defaults.icons.appleicon }}"/>
     {{ end -}}
-    {{ if (fileExists (print "/static" .Site.Data.defaults.icons.favicon)) -}}
-    <link rel="icon" href="{{ .Site.Data.defaults.icons.favicon }}"/>
-    {{ end -}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}/favicon-16x16.png">
+    <link rel="manifest" href="{{ .Site.BaseURL }}/site.webmanifest">
+    <link rel="mask-icon" href="{{ .Site.BaseURL }}/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
 </head>
