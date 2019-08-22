@@ -58,6 +58,13 @@ commenters = [
 ]
 
 [[ orgs ]]
+name = "Bity SA"
+image = "orgs/bity.png"
+    [ orgs.website ]
+    link = "https://bity.com"
+    pretty = "bity.com"
+
+[[ orgs ]]
 name = "Giveth"
 image = "orgs/giveth.png"
     [ orgs.website ]
