@@ -1,0 +1,41 @@
+#hero {
+  &.has-background {
+    position: relative;
+    overflow: visible;
+    @include touch {
+      overflow: hidden;
+    }
+  }
+  .hero-background {
+    position: absolute;
+    right: 0;
+    max-width: 80%;
+    height: 160%;
+    &.is-transparent {
+      opacity: 0.2;
+    }
+  }
+}
+
+#logo {
+  height: 0;
+  svg,img {
+    -webkit-filter: drop-shadow(5px 5px 5px $ethereum-dark-grey);
+    filter:         drop-shadow(5px 5px 5px $ethereum-dark-grey);
+    height: 180%;
+    bottom: -16em;
+    right: 0;
+    position: absolute;
+  }
+}
+
+#tagline {
+  margin-top: 6em;
+}
+
+section.hero {
+  @include desktop {
+    padding-bottom: 0;
+    margin-bottom: 8em;
+  }
+}

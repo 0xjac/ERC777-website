@@ -1,0 +1,13 @@
+<div class="has-text-centered">
+    <figure class="image container is-128x128 title">
+        <img class="" src="/img/{{.image }}" alt="logo of {{ .name }}">
+    </figure>
+    <p class="title is-size-5 has-text-weight-normal">{{ .name }}</p>
+    <div class="subtitle buttons is-centered">
+        {{ with .website -}}
+            <a class="has-text-primary is-size-6" href="{{ .link }}" target="_blank">
+                <span>{{ .pretty }}</span><span class="icon"><i class="fas fa-external-link-square-alt"></i></span>
+            </a>
+        {{- end }}
+    </div>
+</div>

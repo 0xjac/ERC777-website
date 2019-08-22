@@ -1,0 +1,39 @@
+<form action="https://mailthis.to/{{ .Site.Params.MailThisToAlias}}" method="POST">
+    <div class="field is-horizontal">
+        <div class="field-body">
+            <div class="field">
+                <p class="control is-expanded has-icons-left">
+                    <input class="input" type="text" name="name" placeholder="Name">
+                    <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control is-expanded has-icons-left has-icons-right">
+                    <input class="input"  type="email" name="_replyto" placeholder="Email">
+                    <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    <textarea class="textarea" name="message" placeholder="Explain how we can help you"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="_subject" value="ERC777 Website Contact Form">
+    <input type="hidden" name="_honeypot" value="">
+    <input type="hidden" name="_confirmation" value="">
+    <div class="field is-horizontal">
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    <input type="submit" class="button is-primary" value="Send message">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

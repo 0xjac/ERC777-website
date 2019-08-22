@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "variables.scss";
+@import "./node_modules/bulma/bulma";
+$fa-font-path: "../";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+@import "components/navbar";
+@import "components/hero";
+
+#content {
+  min-height: 100vh;
+}
+
+#404 {
+  padding-top: 8em;
+}
+
+.is-borderless {
+  border: none !important;
+}
+
+section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.menu-item:hover {
+  p:first-child {
+    color: $link !important;
+  }
+  .icon {
+    color: darken($primary, 10%) !important;
+  }
+}
+
+#logo-footer {
+  margin-top: 4em;
+  opacity: 0.3;
+  > svg {
+    height: 96px !important;
+  }
+}

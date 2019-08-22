@@ -1,0 +1,43 @@
+$ethereum-white: #FFFFFF;
+$ethereum-light-grey: #ECF0F1;
+$ethereum-dark-grey: #3C3C3D;
+$ethereum-beige: #C99D66;
+$soft-blue: #2A9FD6;
+
+$grey-darker: darken($ethereum-dark-grey, 10%);
+$grey-dark: $ethereum-dark-grey;
+$grey: lighten($ethereum-dark-grey, 20%);
+$grey-light: $ethereum-light-grey;
+$grey-lighter:  lighten($ethereum-light-grey, 10%);
+
+$primary: $ethereum-beige;
+$link: #2A9FD6;
+$link-hover: darken($link, 10%);
+$background: $ethereum-dark-grey;
+$body-background-color: $background;
+$text: $ethereum-light-grey;
+$title-color: $grey-lighter;
+$subtitle-color: $grey-light;
+
+$gradient-top-left: darken(saturate(adjust-hue($primary, -10deg), 10%), 10%);
+$gradient-bottom-right: lighten(saturate(adjust-hue($primary, 10deg), 5%), 5%);
+$gradient: linear-gradient(180deg, $gradient-top-left 0%, $primary 71%, $gradient-bottom-right 100%);
+
+$input-color: $grey-light;
+$input-background-color: $grey-darker;
+$input-border-color: $grey-darker;
+$input-hover-color: $grey-lighter;
+$input-hover-border-color: darken($grey-darker, 10%);
+
+$input-icon-color: $grey;
+$input-icon-active-color: $primary;
+
+$navbar-height: 6rem;
+$navbar-item-img-max-height: 3.25rem;
+$navbar-background-color: $primary;
+$navbar-item-color: $ethereum-light-grey;
+$navbar-item-hover-background-color: darken($primary, 10%);
+$navbar-item-hover-color: $ethereum-light-grey;
+//$navbar-dropdown-item-hover-background-color:
+
+$footer-background-color: $primary;

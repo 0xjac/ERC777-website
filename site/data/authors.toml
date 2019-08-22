@@ -1,0 +1,23 @@
+[[ authors ]]
+name = "Jacques Dafflon"
+github = "0xjac"
+gitlab = "0xjac"
+twitter = "0xjac"
+linkedin = "0xjac"
+website = "https://0xjac.com"
+image = "authors/0xjac.jpg"
+
+[[ authors ]]
+name = "Jordi Baylina"
+github = "jbaylina"
+twitter = "jbaylina"
+linkedin = "jbaylina"
+image = "authors/jordi.jpg"
+
+[[ authors ]]
+name = "Tom"
+github = "TruelevelSA"
+gitlab = "Truelevel"
+twitter = "TruelevelSA"
+website = "https://truelevel.ch"
+image = "authors/tom.jpg"

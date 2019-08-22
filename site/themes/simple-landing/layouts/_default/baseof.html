@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" dir="ltr">
+    {{ partial "head.html" . }}
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+        {{ $js := resources.Get "js/navbar.js" | minify  }}
+        {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+        <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+    </body>
+</html>

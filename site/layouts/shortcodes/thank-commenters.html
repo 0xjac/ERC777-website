@@ -1,0 +1,5 @@
+{{ range $.Site.Data.thanks.commenters -}}
+    <div class="column is-2-desktop is-4-tablet is-6-mobile">
+        <a href="https://github.com/{{ . }}" target="_blank">{{ . }}</a>
+    </div>
+{{- end }}

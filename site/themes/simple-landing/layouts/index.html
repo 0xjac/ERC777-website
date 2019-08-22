@@ -1,0 +1,47 @@
+{{ define "main" }}
+<section id="hero" class="hero is-medium is-bold is-primary has-background">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div  class="column is-5 is-offset-1">
+                    <div class="is-hidden-desktop hero-background is-transparent">{{ partial "logo.html" . }}</div>
+                    <h1 class="title is-size-1 has-text-weight-bold">{{ .Title | default .Site.Title }}</h1>
+                    {{ with .Params.Subtitle -}}
+                        <h2 class="subtitle is-size-2 is-size-3-tablet has-text-weight-bold">{{ . }}</h2>
+                    {{- end }}
+                    {{ with .Params.Tagline -}}
+                        <p id="tagline" class="is-size-5 is-italic has-text-grey-light">{{ . }}</p>
+                    {{- end }}
+                </div>
+                <div id="logo" class="column is-flex is-4 is-offset-2 is-hidden-touch">
+                    {{ partial "logo.html" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="columns is-8 is-mobile is-multiline is-centered">
+            {{ range $.Site.Menus.main -}}
+                <div class="column is-5-desktop is-5-tablet is-11-mobile">
+                    {{ partial "menuitem.html" . }}
+                </div>
+            {{- end }}
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container has-text-centered">
+        <h2 class="title">Authors</h2>
+        <div class="columns is-8 is-mobile is-multiline is-centered">
+            {{ range $.Site.Data.authors.authors -}}
+            <div class="column is-3-desktop is-4-tablet is-12-mobile">
+                {{ partial "author.html" . }}
+            </div>
+            {{- end }}
+        </div>
+    </div>
+</section>
+{{ .Content }}
+{{ end }}

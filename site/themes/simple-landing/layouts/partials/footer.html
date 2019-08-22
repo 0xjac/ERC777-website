@@ -1,0 +1,21 @@
+{{ $author := (index $.Site.Data.authors.authors  0) }}
+<footer class="footer">
+    <div class="has-text-centered">
+        <p>
+            <span class="has-text-weight-bold">{{ $.Site.Title }}</span> made by
+            {{ with $author.website }}<a href="{{ . }}" target="_blank">{{ end }}
+            {{ (index $.Site.Data.authors.authors  0).name }}
+            {{ with $author.website }}</a>{{ end }}.
+        </p>
+        <p>
+            <a href="{{ $.Site.Params.sourceRepo}}" target="_blank">Source code</a> licensed under <a href="https://opensource.org/licenses/MPL-2.0" target="_blank">MPL-2.0</a>.
+            (<span class="is-italic"><a href="{{$.Site.Params.contribLink }}" target="_blank">Contributions</a> are welcome.</span>)
+        </p>
+        <p>
+            Website content licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY NC SA 4.0</a>.
+        </p>
+        <figure id="logo-footer" class="image container is-96x96">
+            {{ partial "logo.html" . }}
+        </figure>
+    </div>
+</footer>

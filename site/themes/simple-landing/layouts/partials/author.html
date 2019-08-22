@@ -1,0 +1,33 @@
+<div class="has-text-centered">
+    <figure class="image container is-128x128 title">
+        <img class="is-rounded" src="/img/{{.image }}" alt="image of {{.name }}">
+    </figure>
+    <p class="title is-4 has-text-weight-normal">{{ .name }}</p>
+    <div class="subtitle buttons is-centered">
+        {{ with .github -}}
+            <a class="button is-borderless is-primary is-outlined" href="https://github.com/{{.}}" target="_blank">
+                <span class="icon"><i class="fab fa-github"></i></span>
+            </a>
+        {{- end }}
+        {{ with .gitlab -}}
+            <a class="button is-borderless is-primary is-outlined" href="https://gitlab.com/{{.}}" target="_blank">
+                <span class="icon"><i class="fab fa-gitlab"></i></span>
+            </a>
+        {{- end }}
+        {{ with .twitter -}}
+            <a class="button is-borderless is-primary is-outlined" href="https://twitter.com/{{.}}" target="_blank">
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+            </a>
+        {{- end }}
+        {{ with .linkedin -}}
+            <a class="button is-borderless is-primary is-outlined" href="https://www.linkedin.com/in/{{.}}" target="_blank">
+                <span class="icon"><i class="fab fa-linkedin"></i></span>
+            </a>
+        {{ end }}
+        {{ with .website -}}
+            <a class="button is-borderless is-primary is-outlined" href="{{.}}" target="_blank">
+                <span class="icon"><i class="fas fa-globe"></i></span>
+            </a>
+        {{- end }}
+    </div>
+</div>

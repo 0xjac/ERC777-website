@@ -1,0 +1,25 @@
+{{ $currentPage := . }}
+<nav id="main-navbar" class="navbar is-fixed-top is-large is-primary is-bold is-transparent is-size-5" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a id="navbar-logo" class="navbar-item" href="{{ .Site.BaseURL }}">
+            <div>{{ partial "logo.html" . }}</div>
+        </a>
+
+
+        <a role="button" id="navbarBurger" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-main">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbar-main" class="navbar-menu">
+        <div class="navbar-end">
+            {{ range .Site.Menus.main -}}
+                <a class="navbar-item is-tab {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL }}">
+                    <span class="icon"><i class="{{ .Pre }}"></i></span><span>{{ .Name }}</span>
+                </a>
+            {{- end }}
+        </div>
+    </div>
+</nav>

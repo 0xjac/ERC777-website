@@ -1,0 +1,72 @@
+commenters = [
+    "mcdee",
+    "MicahZoltu",
+    "Arachnid",
+    "alexvandesande",
+    "gitcnd",
+    "fulldecent",
+    "DaveAppleton",
+    "chompomonim",
+    "mg6maciej",
+    "hyperfekt",
+    "lrgeoemtry",
+    "3esmit",
+    "AdrianClv",
+    "catageek",
+    "sameepsi",
+    "ssteiger",
+    "GoldenDave",
+    "achon22",
+    "bwheeler96",
+    "dmdque",
+    "izqui",
+    "mjdillon",
+    "nventuro",
+    "spalladino",
+    "wighawag",
+    "AnthonyAkentiev",
+    "Austin-Williams",
+    "bluerosss",
+    "frozeman",
+    "irdd",
+    "lsaether",
+    "mryellow",
+    "nagydani",
+    "rainbreak",
+    "Artazor",
+    "MrTibbles",
+    "blockchainassets",
+    "devzl",
+    "frangio",
+    "gitracker",
+    "guylando",
+    "jllaw",
+    "kybernetikos",
+    "kyriediculous",
+    "lyricalpolymath",
+    "mudgen",
+    "nepalbitcoin",
+    "nicksavers",
+    "onbjerg",
+    "rstormsf",
+    "sohkai",
+    "stevenh512",
+    "thegostep",
+    "tjayrush",
+    "wealdtech",
+    "xmaysonnave",
+]
+
+[[ orgs ]]
+name = "Giveth"
+image = "orgs/giveth.png"
+    [ orgs.website ]
+    link = "https://giveth.io/"
+    pretty = "giveth.io"
+
+[[ orgs ]]
+name = "TrueLevel SA"
+image = "orgs/truelevel.jpg"
+    [ orgs.website ]
+    link = "https://truelevel.ch"
+    pretty = "truelevel.ch"

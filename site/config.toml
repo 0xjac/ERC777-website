@@ -1,3 +1,39 @@
-baseURL = "http://example.org/"
+baseURL = "https://erc777.org"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "ERC777 Official Website"
+theme = "simple-landing"
+staticDir = ["static/", "../node_modules/@fortawesome/fontawesome-free/webfonts/"]
+disableKinds = ["RSS", "sitemap", "taxonomy", "taxonomyTerm"]
+
+[params]
+sourceRepo = "https://github.com/0xjac/ERC777-website"
+contribLink = "https://github.com/0xjac/ERC777-website"
+
+[menu]
+  [[ menu.main ]]
+    name = "Read the standard"
+    post = "eips.ethereum.org/EIPs/eip-777"
+    url = "https://eips.ethereum.org/EIPS/eip-777"
+    pre = "fas fa-certificate"
+    weight = 1
+
+  [[ menu.main ]]
+    name = "Reference Implementation"
+    post = "github.com/0xjac/ERC777"
+    url = "https://github.com/0xjac/ERC777"
+    pre = "fas fa-file-code"
+    weight = 2
+
+  [[ menu.main ]]
+    name = "ERC1820 Registry"
+    post = "Pseudo-introspection Registry Contract"
+    url = "https://eips.ethereum.org/EIPS/eip-1820"
+    pre = "fas fa-list-alt"
+    weight = 3
+
+  [[ menu.main ]]
+    name = "Jacques' Master Thesis"
+    post = "Indepth details on the development of ERC777"
+    url = "https://github.com/0xjac/master-thesis"
+    pre = "fas fa-university"
+    weight = 4

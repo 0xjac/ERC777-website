@@ -1,0 +1,7 @@
+<div class="columns is-8 is-mobile is-multiline is-centered">
+    {{ range $.Site.Data.thanks.orgs -}}
+        <div class="column is-3-desktop is-4-tablet is-12-mobile">
+            {{ partial "org.html" . }}
+        </div>
+    {{- end }}
+</div>
