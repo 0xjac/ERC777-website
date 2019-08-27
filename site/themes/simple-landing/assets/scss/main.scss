@@ -1,10 +1,9 @@
 @charset "utf-8";
 @import "variables.scss";
-@import "./node_modules/bulma/bulma";
-$fa-font-path: "../";
-@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "./node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "./node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "bulma/bulma";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/brands";
 
 @import "components/navbar";
 @import "components/hero";

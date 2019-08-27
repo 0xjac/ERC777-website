@@ -90,7 +90,7 @@
     {{- end }}
 
     <!-- CSS -->
-    {{ $scssOptions := (dict "targetPath" "css/styles.css" "enableSourceMap" false "includePaths" (slice "./node_modules")) }}
+    {{ $scssOptions := (dict "targetPath" "css/styles.css" "enableSourceMap" false) }}
     {{ $scssFile:= default "scss/main.scss" .Params.ScssFile}}
     {{ $scss := resources.Get $scssFile }}
     {{ $style := $scss | resources.ToCSS $scssOptions | minify | fingerprint }}

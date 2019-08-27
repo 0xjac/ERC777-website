@@ -2,8 +2,25 @@ baseURL = "https://erc777.org"
 languageCode = "en-us"
 title = "ERC777 Official Website"
 theme = "simple-landing"
-staticDir = ["static/", "../node_modules/@fortawesome/fontawesome-free/webfonts/"]
 disableKinds = ["RSS", "sitemap", "taxonomy", "taxonomyTerm"]
+
+[module]
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "../node_modules/bulma"
+    target = "assets/scss/bulma"
+
+  [[module.mounts]]
+    source = "../node_modules/@fortawesome"
+    target = "assets/scss/@fortawesome"
+
+  [[module.mounts]] # Expose the font files for font-awesome
+    source = "../node_modules/@fortawesome/fontawesome-free/webfonts/"
+    target = "static/webfonts"
 
 [params]
 sourceRepo = "https://github.com/0xjac/ERC777-website"

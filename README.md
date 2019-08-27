@@ -10,7 +10,7 @@
 ## Dependencies
 
 - `npm`
-- `hugo` (extended version)
+- `hugo` (extended version) version 0.56 or above
 
 ## Instructions
 
