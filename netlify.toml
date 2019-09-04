@@ -11,7 +11,7 @@
 
 [[redirects]]
   from = "https://erc777-website.netlify.com/*"
-  to = "https://erc777.org/:splat"
+  to = "https://www.erc777.org/:splat"
   status = 301
   force = true
 

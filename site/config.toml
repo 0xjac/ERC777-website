@@ -1,4 +1,4 @@
-baseURL = "https://erc777.org"
+baseURL = "https://www.erc777.org"
 languageCode = "en-us"
 title = "ERC777 Official Website"
 theme = "simple-landing"
