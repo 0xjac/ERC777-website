@@ -1,15 +1,8 @@
-function isElementInViewport (el) {
-    let rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-}
 function onVisibilityChange(el, callback) {
     let state;
     return function () {
-        let isVisible = isElementInViewport(el);
+        const rect = el.getBoundingClientRect();
+        const isVisible = rect.top >= 0;
         if (isVisible !== state) {
             state = isVisible;
             if (typeof callback == 'function') {
